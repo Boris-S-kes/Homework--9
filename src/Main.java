@@ -44,19 +44,22 @@ public class Main {
 
         System.out.println("Task3");
         int[] inputArray3 = {400, 5000, 600, 7000, 800};
-        boolean[] outputArray3 = new boolean[inputArray3.length];
+        boolean[]outputArray3 = new boolean[inputArray3.length];
 
-        int index3 = 0;
+
         for (int bonUs : inputArray3) {
             if (bonUs > 5000) {
-                outputArray3[index3] = true;
+                System.out.println(true);
             } else {
-                outputArray3[index3] = false;
+                System.out.println(false);
             }
-            index3++;
-            System.out.println(Arrays.toString(inputArray3));
-            System.out.println(Arrays.toString(outputArray3));
         }
+
+
+
+
+
+
         System.out.println(" Task4");
         int[] inputArray4 = {60, 400, 300, 5000, 800};
         boolean outputArray4 = true;
@@ -72,13 +75,14 @@ public class Main {
 
         System.out.println("Task5");
        int[]inputArray5 = { 200 , 400 , 700 , 600 , 900};
-       int outputArray5 = 0;
+       int profMonth = 0;
        for ( int prof : inputArray5) {
            if (prof > 0) {
-               outputArray5++;
+               profMonth++;
            }
        }
-       System.out.println(Arrays.toString(inputArray5));
-       System.out.println(outputArray5);
+       int[]outputArray5 = {profMonth};
+       System.out.println( "inputArray5:" + Arrays.toString(inputArray5));
+       System.out.println( "месяцев были рентабельными " + Arrays.toString (outputArray5));
            }
        }
