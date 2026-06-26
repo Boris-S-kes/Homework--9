@@ -46,15 +46,16 @@ public class Main {
         int[] inputArray3 = {400, 5000, 600, 7000, 800};
         boolean[]outputArray3 = new boolean[inputArray3.length];
 
-
+        int index3 = 0;
         for (int bonUs : inputArray3) {
             if (bonUs > 5000) {
-                System.out.println(true);
+                outputArray3[index3] = true;
             } else {
-                System.out.println(false);
+                outputArray3[index3] = false;
             }
         }
-
+        System.out.println(Arrays.toString(inputArray3 ));
+        System.out.println(outputArray3[index3]);
 
 
 
@@ -62,15 +63,18 @@ public class Main {
 
         System.out.println(" Task4");
         int[] inputArray4 = {60, 400, 300, 5000, 800};
-        boolean outputArray4 = true;
+        boolean [] outputArray4 = new boolean[inputArray4.length];
+        int index4 = 0;
         for (int balanSe : inputArray4) {
             if (balanSe < 0) {
-                outputArray4 = false;
-                break;
+                outputArray4[index4] = true;
+            }else {
+                outputArray4[index4] = false;
+
             }
         }
         System.out.println(Arrays.toString(inputArray4));
-        System.out.println(outputArray4);
+        System.out.println(outputArray4 [index4]);
 
 
         System.out.println("Task5");
