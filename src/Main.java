@@ -43,7 +43,7 @@ public class Main {
         System.out.println(Arrays.toString(outputArray2));
 
         System.out.println("Task3");
-        int[] inputArray3 = {400, 5000, 600, 7000, 800};
+        int[] inputArray3 = {400, 5100, 600, 7000, 800};
         boolean[]outputArray3 = new boolean[inputArray3.length];
 
         int index3 = 0;
@@ -52,10 +52,12 @@ public class Main {
                 outputArray3[index3] = true;
             } else {
                 outputArray3[index3] = false;
+
             }
+            index3++;
         }
         System.out.println(Arrays.toString(inputArray3 ));
-        System.out.println(outputArray3[index3]);
+        System.out.println(Arrays.toString(outputArray3));
 
 
 
@@ -66,15 +68,16 @@ public class Main {
         boolean [] outputArray4 = new boolean[inputArray4.length];
         int index4 = 0;
         for (int balanSe : inputArray4) {
-            if (balanSe < 0) {
+            if (balanSe > 0) {
                 outputArray4[index4] = true;
             }else {
                 outputArray4[index4] = false;
 
             }
+            index4++;
         }
         System.out.println(Arrays.toString(inputArray4));
-        System.out.println(outputArray4 [index4]);
+        System.out.println(Arrays.toString(outputArray4));
 
 
         System.out.println("Task5");
